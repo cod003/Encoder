@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Destiny Encoder</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" sizes="16x16" href="Files/logo.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <style>
+        /* *{
+            background-color: black;
+        }  */
+        #app{
+            width: 100%;
+            max-width: 100%;
+        }
+        #app p{
+            width: 100%;
+            padding: 9px;
+            background: rgb(92 239 252);
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 22px;
+        }
+        #app textarea{
+            width: 100%;
+            border:2px solid rgb(138, 138, 138);
+            outline: none;
+            border-radius: 14px;
+            min-height: 14em;
+            margin-top: 0em;
+        }
+        #app select{
+            width: 100%;
+            padding: 5px;
+            border-radius: 14px;
+            margin-bottom: 7px;
+        }
+        </style>
+
+    </head>
+
+<body>
+    <select name="" id="select" onchange="chbackg()">
+        <option value="white">الوضع الافتراضي</option>>
+        <option value="#003743"  onchange="location.reload();">الوضع الليلي</option>
+    </select>
+
+    <nav class="navbar navbar-light bg-light">
+        <a " href="#" class="navbar-brand"> Destiny Encoder</a>
+        <a class="navbar-brand" href="https://destiny-003.github.io/ODC003/index.html">
+            <img src="Files/favicon.png" style="object-fit: contain;" width="30" height="30" class="d-inline-block align-top" alt="Destiny C"  target="_blank" >
+          </a>
+      </nav>
+
+   
+   <main id="app">
+
+       <p id="parograph1">Text - النص</p>
+       <select id="selected">
+           <option value="encode">تشفير النص</option>
+           <option value="decode">فك التشفير </option>
+       </select>
+
+       <textarea id="text"></textarea>
+
+       <p id="parograph2"> Result - النتيجة</p>
+       <textarea id="result">
+
+        </textarea>
+
+   </main> 
+
+   <div class="card">
+    <div style="text-align: center;" class="card-header">
+      حولنا
+    </div>
+    <div class="card-body" >
+      <blockquote class="blockquote mb-0">
+        <p style="text-align: right;">يقدم الموقع خدمة تشفير النصوص باستخدام قاعدة (64) بت وكذلك فك تشفيرها --- برعاية هيئة التطوير - (منظمة القدر) </p>
+        <p dir="rtl" style="text-align: center; font-size: 0.7em;">جميع الحقوق محفوظة لدى منظمة القدر©  </p>
+
+    </blockquote>
+    </div>
+  </div>
+
+<script src="Files/app.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</body>
+</html>
