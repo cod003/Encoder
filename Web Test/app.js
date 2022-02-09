@@ -19,16 +19,8 @@ function chbackg() {
     parograph1.style.backgroundColor = "rgb(37, 129, 138)";
 
     parograph2.style.backgroundColor = "rgb(37, 129, 138)";
-} else {
-    select.addEventListener("click", ()=>{
-       location.reload();
-    })
+} 
 }
-}
-
-
-
-
 
 
 // The btoa() method encodes a string in base-64.
