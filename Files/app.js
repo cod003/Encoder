@@ -5,7 +5,7 @@ function chbackg() {
     if (select != "white") {
     document.body.style.background = document.getElementById('select').value;
 
-    selected.style.backgroundColor = "rgb(37, 129, 138)";
+    select.style.backgroundColor = "rgb(37, 129, 138)";
 
     select.style.backgroundColor = "rgb(10, 10, 10,100)";
     select.style.color = "white";
