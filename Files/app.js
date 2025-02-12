@@ -5,7 +5,7 @@ function chbackg() {
     if (select != "white") {
     document.body.style.background = document.getElementById('select').value;
 
-    select.style.backgroundColor = "rgb(37, 129, 138)";
+    selected.style.backgroundColor = "rgb(37, 129, 138)";
 
     select.style.backgroundColor = "rgb(10, 10, 10,100)";
     select.style.color = "white";
@@ -17,8 +17,9 @@ function chbackg() {
     result.style.color = "white";
     
     parograph1.style.backgroundColor = "rgb(37, 129, 138)";
-
+    
     parograph2.style.backgroundColor = "rgb(37, 129, 138)";
+    
 } else {
     select.addEventListener("click", ()=>{
        location.reload();
